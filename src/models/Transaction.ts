@@ -5,7 +5,7 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   ManyToOne,
-  JoinColumn
+  JoinColumn,
 } from 'typeorm';
 import Category from './Category';
 
@@ -24,9 +24,9 @@ class Transaction {
   @Column('float')
   value: number;
 
-  @ManyToOne(() => Category)
+  @ManyToOne(() => Category, { eager: true })
   @JoinColumn({ name: 'category_id' })
-  category_id: string;
+  category: Category;
 
   @CreateDateColumn()
   created_at: Date;
