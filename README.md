@@ -1,6 +1,11 @@
-# Desafio: Banco de dados e upload de arquivos com Node.js - BootCamp GoStack 11.0
+<img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
-### Específicação dos testes
+<h3 align="center">
+  👨🏻‍🚀 Desafio: TypeORM e upload com Node.js - BOOTCAMP GOSTACK 11.0 🚀
+</h3>
+
+
+### ✔️ Específicação dos testes
 
 Para esse desafio, temos os seguintes testes:
 
@@ -17,3 +22,17 @@ Para esse desafio, temos os seguintes testes:
 * **`should be able to delete a transaction`**: Para que esse teste passe, você deve permitir que a sua rota de delete exclua uma transação, e ao fazer a exclusão, ele retorne uma resposta vazia, com status 204.
 
 - **`should be able to import transactions`**: Para que esse teste passe, sua aplicação deve permitir que seja importado um arquivo csv, contendo o seguinte [modelo](./assets/file.csv). Com o arquivo importado, você deve permitir que seja criado no banco de dados todos os registros e categorias que estavam presentes nesse arquivo, e retornar todas as transactions que foram importadas.
+
+## 🚀 Instalação e execução
+
+1. Faça um clone desse repositório;</br>
+   git clone https://github.com/matheusguermandi/gostack-desafio06.git
+   
+2. Com o terminal aberto, verifique se está na pasta `gostack-desafio06`;</br>
+   Caso não esteja execute o comando `cd gostack-desafio06`
+   
+3. Execute `yarn` para realizar a instalação das dependencias;
+
+4. Execute `yarn dev:server` para realizar a inicialização da aplicação;
+
+5. Execute `yarn test` caso queira rodar os testes automatizados.
